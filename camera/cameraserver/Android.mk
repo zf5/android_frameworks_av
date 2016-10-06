@@ -14,6 +14,7 @@
 
 LOCAL_PATH:= $(call my-dir)
 
+$(warning Target has integrated cameraserver into mediaserver. This is weakening security measures introduced in 7.0)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES:= \

@@ -38,4 +38,14 @@ LOCAL_INIT_RC := mediaserver.rc
 
 LOCAL_CFLAGS := -Werror -Wall
 
+    LOCAL_CFLAGS += -DNO_CAMERA_SERVER
+
+    LOCAL_SHARED_LIBRARIES += \
+        libcameraservice \
+        android.hardware.camera.common@1.0 \
+        android.hardware.camera.provider@2.4
+
+     LOCAL_STATIC_LIBRARIES += \
+        libarect
+
 include $(BUILD_EXECUTABLE)

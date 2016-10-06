@@ -92,6 +92,8 @@ LOCAL_EXPORT_C_INCLUDE_DIRS := \
 
 LOCAL_CFLAGS += -Wall -Wextra -Werror
 
+    LOCAL_CFLAGS += -DNO_CAMERA_SERVER
+
 LOCAL_MODULE:= libcameraservice
 
 include $(BUILD_SHARED_LIBRARY)
