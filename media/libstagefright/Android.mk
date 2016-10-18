@@ -126,6 +126,8 @@ LOCAL_SHARED_LIBRARIES += \
 
 LOCAL_EXPORT_SHARED_LIBRARY_HEADERS := libmedia
 
+LOCAL_CFLAGS += -DCAMCORDER_GRALLOC_SOURCE
+
 LOCAL_CFLAGS += -Wno-multichar -Werror -Wno-error=deprecated-declarations -Wall
 
 # enable experiments only in userdebug and eng builds
