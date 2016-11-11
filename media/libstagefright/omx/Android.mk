@@ -56,6 +56,8 @@ LOCAL_EXPORT_C_INCLUDES := \
 LOCAL_EXPORT_SHARED_LIBRARY_HEADERS := \
         android.hidl.memory@1.0
 
+LOCAL_CFLAGS += -DCAMCORDER_GRALLOC_SOURCE
+
 LOCAL_MODULE:= libstagefright_omx
 LOCAL_CFLAGS += -Werror -Wall -Wno-unused-parameter -Wno-documentation
 LOCAL_SANITIZE := unsigned-integer-overflow signed-integer-overflow cfi
